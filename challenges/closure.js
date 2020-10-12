@@ -18,7 +18,25 @@ myFunction();
 
 // Explanation: 
 
+/* The nested function can access the variable "internal because it has a lexical scope of its surrounding
+   function and the scope of its parent function and the global scope. Internal functions can reach out
+   of thier immediate scope to find values, but outside functions cannot reach in to get them."
+
+
 
 /* Task 2: Counter */
 
-/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of
+that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+let count = 0;
+
+function summation(num) {
+
+  for (i = 0; i <= num; i++){
+    count = count + i;
+  }
+  console.log(count);
+}
+
+summation(4);
