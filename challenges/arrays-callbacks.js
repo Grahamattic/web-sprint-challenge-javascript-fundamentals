@@ -25,7 +25,6 @@ string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aur
         const displayNames = [];
 
         zooAnimals.forEach(function(animal) {
-
             displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`
             );
         });
@@ -42,7 +41,6 @@ array of strings named lowCaseAnimalNames, each string following this pattern: "
 */
 
         const lowCaseAnimalNames = zooAnimals.map(function(items) {
-
             return items.animal_name.toLowerCase();
         });
 
@@ -57,7 +55,6 @@ lowPopulationAnimals which contains only the animals with a population less than
 
 */
         const lowPopulationAnimals = zooAnimals.filter(function(animal) {
-
           return animal.population < 5;
         });
 
@@ -73,7 +70,6 @@ zoos using the .reduce() method. Remember the reduce method takes two arguments:
 */
 
         const populationTotal = zooAnimals.reduce((totalAnimals, item) => {
-
           return totalAnimals + item.population;
         }, 0);
 
@@ -91,7 +87,6 @@ zoos using the .reduce() method. Remember the reduce method takes two arguments:
 */
 
         function consume(a, b, cb) {
-
             return cb(a,b);
         }
 
@@ -105,17 +100,14 @@ zoos using the .reduce() method. Remember the reduce method takes two arguments:
 */
 
         function add(a,b) {
-
             return a + b;
         }
 
         function multiply(a,b) {
-
             return a * b;
         }
 
         function greeting(firstName, lastName) {
-
             return `Hello ${firstName} {${lastName}, nice to meet you!`;
         }
 
