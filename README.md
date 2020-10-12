@@ -27,13 +27,34 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    .forEach() loops through array elements but always returns undefined and throws away return values. The result of this method is not an output. .map() The most significant difference between .forEach and .map is that map returns a new array of elements while in turn passing each element back to the callback. It is an immutable function (i.e., it will not affect the original array). 
+
+
 2. Explain the difference between a callback and a higher order function.
+
+    A higher-order function is a type of function that takes another function(s) as an argument(s), and/or returns a function to its caller(s). A callback function is a type of function that is passed into another function where it can then be called.
+
 
 3. What is closure?
 
+    A JavaScript closure is a function (enclosed) in another function, with references to its surrounding state (the lexical environment). It is the combination of a function and the variables it uses within its scope. It gives an inner function access to an outer function’s scope. Closure makes it possible for a function to have "private" variables. A JavaScript closure has access to the parent scope even after the parent function has closed.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+    a.	Window/Global Object Binding. The value of "this" will be the window/console Object when in the Global scope.
+
+    b.	Implicit Binding. The object before the dot is "this" whenever a preceding dot calls a function.
+
+    c.	New Binding. "This" refers specifically to the instance of the object that is created and returned by the constructor function whenever a constructor function is used.
+
+    d.	Explicit binding. "This" is explicitly defined whenever JavaScript’s call or apply method is used.
+
+
 5. Why do we need super() in an extended class?
+
+    super() accesses and calls the constructor of an object’s parent class and gives the extended class access to the “this” properties and methods of the parent class. Using super() allows us to skip initializing values initialized in the parent object.
+    
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
